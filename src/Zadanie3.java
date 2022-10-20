@@ -4,7 +4,14 @@ public class Zadanie3 {
     public static void main(String args[]) {
         Scanner sc = new Scanner(System.in);
         System.out.print("Podaj a ");
-        float aCichecki = sc.nextFloat();
+        float aCichecki;
+       // float aCichecki = sc.nextFloat();
+        do{
+            aCichecki = sc.nextFloat();
+            if(aCichecki==0){
+                System.out.println("a nie może być równe 0, podaj a ponownie");
+            }
+        }while (aCichecki==0);
         //float aCichecki= sc.nextFloat();
         //if (aCichecki==0){
         //   System.out.println("a nie może być równe 0, podaj a ponownie");
